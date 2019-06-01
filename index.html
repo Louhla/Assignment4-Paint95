@@ -3,25 +3,38 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- link to css file -->
+    <title>Become an artist with Paint95</title>
     <link rel="stylesheet" href="./css/paint.css">
-    <!-- link to js file -->
-    <script src="js/paint.js"></script>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 </head>
 
 <body>
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
+    <div class="header">Paint95</div>
+    <div class="container">
+        <div class="tools-bg">
+            <div class="tools row">
+                <input id="yellow" class="btn color yellow" type="button">
+                <input id="green" class="btn color green" type="button">
+                <input id="red" class="btn color red" type="button">
+                <input id="plus" class="btn size plus" type="button" value="+">
+                <button id="round" class="btn shape round"><i class="fas fa-circle"></i></button>
+                <button id="clear" class="btn clear">Clear</br>All</button>
+            </div>
+            <div class="tools row">
+                <input id="blue" class="btn color blue" type="button">
+                <input id="black" class="btn color black" type="button">
+                <button id="white" class="btn color white"><i class="fas fa-eraser"></i></button>
+                <input id="minus" class="btn size minus" type="button" value="-">
+                <button id="square" class="btn shape square"><i class="fas fa-square-full"></i></button>
+                <button id="save" class="btn save">Save</button>
+                <button id="load" class="btn load">Load</button>
+            </div>
+        </div>
+        <div id="canvas" class="paint-canvas">
+        </div>
+    </div>
+    </div>
+    <script src="js/paint.js"></script>
 
 </body>
 
