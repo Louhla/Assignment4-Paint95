@@ -5,6 +5,7 @@ body{
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS33ALfrbZLnjHntY0PV1Ym5rp3vOSZd1EBRReGaDgr0Yc4tEBz");
     object-fit: contain;
     user-select: none;
+    /* position: absolute; */
 }
 .header{
     height: 60px;
@@ -34,6 +35,8 @@ body{
     height: 500px;
     margin-right: 50px;
     background-color: white;
+    /* position: relative; */
+    /* overflow: hidden; */
 }
 .btn{
     width: 50px;

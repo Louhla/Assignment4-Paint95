@@ -61,7 +61,7 @@ function draw(e){
 
 function drawDot(e) {
     console.log(e.clientY)
-    if (e.clientY < 734) {
+    if ((e.clientY < 583) && ((985 > e.clientX) && (e.clientX > 488))) {
        draw(e);
        isDrawing = true;
     } 
@@ -69,9 +69,10 @@ function drawDot(e) {
 
 document.getElementById("canvas").addEventListener("mousemove", drawLine);
 function drawLine(e) {
-    if (isDrawing === true && e.clientY < 734) {
+    if ((e.clientY < 583) && ((985 > e.clientX) && (e.clientX > 488))) {
+    if (isDrawing === true) {
         draw(e);
-    }
+    }}
 }
 
 document.getElementById("canvas").addEventListener("mouseup", stopDrawing);
@@ -90,3 +91,4 @@ document.getElementById("load").addEventListener("click", loadImage);
 function loadImage() {
     canvas.innerHTML = localStorage.image;
 }
+
